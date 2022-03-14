@@ -1,0 +1,21 @@
+{
+    "educacion":
+    {
+        "school": "Julia Silva de Cejas 4-035",
+        "title": "Tecnico",
+        "img": "",
+        "career":"Tecnicatura en Agronomia especializado en Enología",
+        "score": "10",
+        "start":"1998",
+        "end":"2004",
+    }
+    {
+        "school": "Universidad Nacional de Cuyo",
+        "title": "Licenciado",
+        "img": "",
+        "career":"Licenciatura en Musica Popular especialidad Guitarra",
+        "score": "10",
+        "start":"2005",
+        "end":"2012",
+    }
+}

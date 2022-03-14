@@ -1,0 +1,14 @@
+{
+    "Persona":
+    {
+        "fullName": "Juanjo Martinez",
+        "dateOfBirth": "29/08/1985",
+        "aboutMe":"Músico, Arreglador e informatico",
+        "mail": "juanjotic85@gmail.com",
+        "backImage":" ",
+        "image":"",
+        "position":  "Full Stack Developer",
+        "ubication": "San Martín, Mendoza (Argentina)",
+
+    }
+}
