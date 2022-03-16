@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MiportfolioService } from 'src/app/servicios/miportfolio.service';
 
 @Component({
   selector: 'app-datospersonales',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./datospersonales.component.css']
 })
 export class DatospersonalesComponent implements OnInit {
+  persona: any
 
-  constructor() { }
+  constructor(private miServicio:MiportfolioService) { }
 
   ngOnInit(): void {
+    this.miServicio.obtenerDatosPersona().subscribe(data => {
+      console.log(data);
+      this.persona=data["Persona"]
+    })
   }
 
 }
