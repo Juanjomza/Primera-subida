@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class MiportfolioService {
 
   constructor(private http:HttpClient) { 
-    console.log("El servicio esta ok");
+    console.log("El servicio esta andando joya, con algunos errores pero joya");
   }
   obtenerDatosPersona():Observable<any>{
    return this.http.get('/assets/data/persona.json')
