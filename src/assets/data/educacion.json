@@ -2,8 +2,8 @@
    "educacion":[
      {
    "school": "Julia Silva de Cejas 4-035",
-    "title": "Tecnico",
-    "img": "",
+    "title": "Tecnico Nacional Agropecuario",
+    "img": "./assets/LOGO-ENC-DGE.png",
     "career": "Tecnicatura en Agronomia especializado en Enología",
     "score": "10",
     "start": "1998",
@@ -12,13 +12,24 @@
   {  
     "educacion":"",
     "school": "Univerdad Nacional de Cuyo",
-     "title": "Licenciado",
-     "img": "",
+     "title": "Licenciado en Música Popular",
+     "img": "./assets/uncuyo.png",
      "career": "Licenciatura en Música Popular",
      "score": "10",
      "start": "1998",
      "end": "2004"
+   },
+   {  
+    "educacion":"",
+    "school": "Argentina Programa",
+     "title": "Desarrollador Full Stack",
+     "img": "./assets/APLogo-20-20.png",
+     "career": "Full Stack Developer",
+     "score": "10",
+     "start": "2021",
+     "end": "2022"
    }
+
   ]
 }
  

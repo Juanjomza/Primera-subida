@@ -1,20 +1,18 @@
 <section>
+  <h2>Cursos</h2>
     <div class="container">
-      <div class="row">
+      <button class="btn btn-primary">Editar</button>
+      <div *ngFor="let item of cursos" class="row">
         <div class="col">
-          <img src="./assets/APLogo-20-20.png" alt="">
-          <img src="./assets/CONOSUR.png" alt="">
-          <img src="./assets/logofesat.png" alt="">
-  
+          <img [src]=item.img  alt="">
         </div>
-        <div class="col">
-          <h1>Cursos</h1>
-          <p>#SeProgramar (Argentina Programa)</p>
-          <p>#YoProgramo (Argentina Programa)</p>
-          <p>Inglés Técnico para programadores (Argentina Programa)</p>
-          <p>Curso Introductorio YoQuieroProgramar (ConoSurTech)</p>
-          <p>Programación en lenguaje Python (Programa CITI FESAT)</p>
+        <div  class="col">
+          <p><b>{{item.title}}</b></p>
+          <p><i>{{item.school}}</i></p>
+        
+     
         </div>
       </div>
     </div>
+    
   </section>

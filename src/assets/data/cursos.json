@@ -1,0 +1,28 @@
+{
+  "cursos": [{
+      "title": "#SeProgramar",
+      "school": "(Argentina Programa)",
+      "img": "./.png"
+    },
+    {
+      "title": "#YoProgramo",
+      "school": "(Argentina Programa)",
+      "img": "./.png"
+    },
+    {
+      "title": "Yo Quiero Programar",
+      "school": "(Conosur Tech)",
+      "img": "./assets/CONOSUR.png"
+    },
+    {
+      "title": "Programación en Lenguaje Python",
+      "school": "(Programa CITI/Fundacion FESAT)",
+      "img": "./assets/logofesat.png"
+    },
+    {
+      "title": "Ingles Técnico para programadores",
+      "school": "(Argentina Programa)",
+      "img": "./assets/APLogo-20-20.png"
+    }
+  ]
+}

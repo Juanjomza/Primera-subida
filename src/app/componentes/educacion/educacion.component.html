@@ -1,15 +1,20 @@
 <section>
+  <h1>Educación</h1>
     <div class="container">
-      <div class="row">
+      <button class="btn btn-primary" >Editar</button>
+      <div *ngFor="let item of educacion" class="row">
         <div class="col">
-          <img src="./assets/uncuyo.png" alt="">
+          <img [src]=item.img  alt="">
         </div>
         <div class="col">
-          <h1>Estudios Realizados</h1>
-          <p>Técnico Nacional Agropecuario especializado en Enología</p>
-          <p>Licenciatura en Musica Popular (UNCuyo)</p>
+          <h2>{{item.school}}</h2>
+          <p>{{item.title}}</p>
+          <p>{{item.carreer}}</p>
+        
+     
         </div>
       </div>
     </div>
+
   </section>
   
