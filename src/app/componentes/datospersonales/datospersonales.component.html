@@ -7,62 +7,80 @@
       <div class="col">
         <p id="position">{{ persona.position }}</p>
         <p id="ubication">{{ persona.ubication }}</p>
-        <p>
-          Contacto: juanjotic85@gmail.com <br />
-          261 6303011
-        </p>
+        <p id="mail">{{ persona.mail }}</p>
+        <p id="contact">{{ persona.contact }}</p>
         <button *ngIf="usuarioAutenticado" class="btn btn-primary" data-bs-toggle="modal"
-      data-bs-target="#modalDatos">
-      Editar
-    </button>
+          data-bs-target="#editarDatos">
+          Editar
+        </button>
       </div>
     </div>
   </div>
-  <!-- Modal -->
-<div class="modal fade" id="modalDatos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+</section>
+<!-- Button trigger modal -->
+<!--<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="editarDatos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Editar datos personales</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Editar Datos</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <form>
           <div class="mb-3">
-            <label for="fullName" class="form-label">Nombre y Apellido</label>
-            <input type="email" class="form-control" id="fullName">
+            <label for="exampleInputEmail1" class="form-label">Nombre y apellido</label>
+            <input type="text" class="form-control" id="fullName" formControlName="fullName" class="text-light" >
+            <div *ngIf="fullName?.invalid && (fullName?.dirty || fullName?.touched)">
+              <div *ngIf="fullName?.errors?.['required']" class="text-warning">
+              Estos datos son obligatorios
+              </div>
+            </div>
           </div>
           <div class="mb-3">
-            <label for="persona.position" class="form-label">Posicion</label>
-            <input type="email" class="form-control" id="persona.position">
+            <label for="exampleInputEmail1" class="form-label">Posicion</label>
+            <input type="text" class="form-control" id="position" formControlName="position" class="text-light" >
+            <div *ngIf="fullName?.invalid && (fullName?.dirty || fullName?.touched)">
+              <div *ngIf="fullName?.errors?.['required']" class="text-warning">
+              Estos datos son obligatorios
+              </div>
+            </div>
+          
           </div>
           <div class="mb-3">
-            <label for="persona.ubication" class="form-label">Ubicacion</label>
-            <input type="email" class="form-control" id="persona.ubication">
+            <label for="exampleInputEmail1" class="form-label">Lugar de residencia</label>
+            <input type="text" class="form-control" id="ubication" formControlName="ubication" class="text-light">
+            <div *ngIf="fullName?.invalid && (fullName?.dirty || fullName?.touched)">
+              <div *ngIf="fullName?.errors?.['required']" class="text-warning">
+              Estos datos son obligatorios
+              </div>
+            </div>
           </div>
           <div class="mb-3">
-            <label for="fullName" class="form-label">Contacto</label>
-            <input type="email" class="form-control" id="fullName">
+            <label for="exampleInputEmail1" class="form-label">Contacto</label>
+            <input type="number" class="form-control" id="contact" formControlName="contact" class="text-light">
+            <div *ngIf="fullName?.invalid && (fullName?.dirty || fullName?.touched)">
+              <div *ngIf="fullName?.errors?.['required']" class="text-warning">
+              Estos datos son obligatorios
+              </div>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+         
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-          Salir
+          Cerrar
         </button>
-        <button type="button" class="btn btn-primary">Guardar</button>
+        <button type="button" class="btn btn-primary" (click)="guardarDatos()">Guardar</button>
       </div>
     </div>
   </div>
 </div>
-</section>
+
+
 
